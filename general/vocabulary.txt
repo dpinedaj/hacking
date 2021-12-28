@@ -1,0 +1,36 @@
+Malware:
+    Stands for "malicious software". Beign as simplistic as possible, it's something that has been
+    projected to harm you, your company, devices and data.
+
+    types:
+      - Adware:
+            It's Designed to show different ads on your screen, often through pop-ups.
+            It can decrease your security strength, which can facilitate infection by other malwares
+      - Cryptojacking:
+            Cryptocurrency miner. Allows the attackers to use your computer to generate cryptocurrency, such as Bitcoin and Monero.
+            Generally, the hacker infects your computer with another type of malware, such as a Trojan, and then infects your machine with
+            the cryptojacking
+      - Keylogger:
+            Keylogger works as a database. Its job is to record all your keystrokes on the keyboard. Then this information is sent to the hacker.
+            who can identify passwords and details of your credit card, for example.
+      - Ransomware:
+            Ransomware has the ability to encrypt your files or block your devices and systems.
+            Hacers then demand a payment for the information
+      - Rootkit:
+            Rootkit is an advanced malware designed to allow full control over your computer.
+            Besides that, it has a particular characteristic: camouflage, which means that your security software and
+            operating system may not detect it.
+      - Spyware:
+            Spyware is a spy software. Secretly, after infecting your device, it will report your activities to the attacker.
+            It's commonly used by criminals who are trying to seal passwords, payment data, and confidential information.
+      - Trojan:
+            Trojan works as a gateway for attackers, allowing them to have full access to your system.
+            It can be used to install other types of malware on your computer, such as ransomware,
+            and also to steal important information, such as your internet banking credentials
+      - Virus:
+            Virus is essentially a malware that merge to other programs.
+            Then it's able to cause damage and modify other computer programs.
+            An huge concern about a virus is that it can spread quickly and uncontrollably
+      - Worms:
+            Worms were created to destroy data and files.
+            The concern is the same as with a virus: they self-replicate easily and infect other machines
