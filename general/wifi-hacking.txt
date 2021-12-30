@@ -1,0 +1,15 @@
+Tools:
+    - Wifite
+    - Reaver
+        airmon-ng
+    - Fluxion
+
+Methods:
+    -    Wifite
+
+    Reaver
+
+        airmon-ng
+
+
+    fluxion
