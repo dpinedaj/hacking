@@ -1,0 +1,17 @@
+Se espera lograr:
+- Manejo de protocolos de seguridad HTTPS, SSL/TLS, IPsec, SSH
+- Configurar sistemas de filtrado, firewall, deteccion de intrusiones, creacion de reglas de cifrado de trafico, actividad sospechosa
+- Diseniar arquitecturas que implementen protocolos de seguridad desde el principio el uso de zonas de desmilitarización (DMZ)"
+- Diseniar, configurar e instalar VPN y redes seguras
+- aplicar tecnicas de seguridad y reconocer la norma ISO-27001
+
+
+Que es ciberseguridad:
+Practica para implementar serie de reglas o normas, 
+en pro de la informacion y los dispositivos en una infraestructura
+
+
+
+
+
+- nmap, jhon the ripper, shell inversor

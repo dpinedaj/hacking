@@ -1,0 +1,67 @@
+Redes:
+- Medio de intercomunicacion entre dispositivos dentro de una infraestructura para compartir informacion y recursos
+
+Tipos de Redes:
+- Redes de area local (LAN) para conectar dispositivos en area pequenia, casa u oficina
+- Redes de area extensa (WAN) para conectar en oficinas de diferentes ciudades o paises
+- Redes de area de campus (CAN) para conectar dispositivos en una universidad o institucion
+- Redes de area metropolitana (MAN) para conectar dispositivos en una ciudad
+
+Componentes de una red:
+- Dispositivos de red: 
+  - router: Dispositivo que permite la conexion entre 2 o mas redes "encaminador", 
+            los gama baja de 4 a 8 puertos de conexion "puerto giga-ethernet y fast-ethernet" y 4 para fibra optica
+  - switches: Permite que diferentes dispotivos en una red puedan compartir recursos (se puede usar para compartir red cableada)
+            Conexion cableada o conexion 
+            El switch tiene una tabla de rutas (nro principal asociado a numero secundario), nombre en la red
+  - hubs: dispositivo que conecta varios dispositivos de red entre sí, permitiendo que se comuniquen. Funciona como un punto central de conexión, 
+            retransmitiendo los datos que recibe a todos los dispositivos conectados
+- Dispositivos finales:
+  - Computadoras, impresoras y dispositivos moviles
+- Medios de transmision: cables de cobre, fibra optica y ondas de radio
+- Protocolos de red: TCP/IP, estandares de comunicacion y transmision de datos en la red
+
+Modelo OSI, TCP/IP, UDP:
+- OSI: Referencia teorico de 7 capas, cada una tiene un objetivo especifico
+- TCP/IP: Referencia practico de 4 capas:
+  - Una direccion IP es de 32 bits, dividida en 4 octetos
+  - capas:
+    - Aplicacion
+    - Transporte
+    - Internet
+    - Acceso a la red / Fisica
+  - Permiten la localización de la misma
+  - Tipos:
+    - privada: Permite identificar el equipo dentro de una red privada, se asocia al nombre del equipo
+    - publica: Asignada por el proveedor del servicio de internet, permite la salida de la información hacia la red de redes a nivel mundial.
+  - IPv6
+  - IPv4
+  - Puede ser asignacion manual, automatica o estatica
+
+
+- UDP: No le interesa el estado, le interesa la velocidad, entrega y no espera respuesta (Se usa en telefonia)
+
+Arquitectura:
+Cortafuegos (Firewall):
+- Controlar y filtrar trafico de red
+- Tipos:
+  - Filtro de paquetes
+  - Inspeccion de estado
+  - Proxy Firewall: intermediarios de usuarios y servicios
+  - Next Generation Firewalls: Inspeccion profunda de paquetes (DPI), Prevencion Intrusiones (IPS)
+Mejores practicas:
+- Implementar multiples capas de seguridad, por si una falla, otras siguen protegiendo
+- Dividir la red en segmentos con diferentes niveles de seguridad y diferentes controles de acceso
+- Mantener todos los dispositivos actualizados
+- Utilizar herramientas de monitoreo continuo de tráfico de red (captura y analisis de datos en RT)
+Principios de disenio:
+- Defensa de profundidad: Firewall, MFA, politicas de acceso
+- Separacion de funciones: Diferentes administradores para firewall y sistemas de monitoreo
+Segmentacion de redes:
+- Usar VLANs, separar por ej red empleados, red invitados y red de servidores
+- Crear zona desmilitarizada (DMZ) donde estan los servidores accesibles desde el exterior, separados de las zonas sensibles
+Implementacion redes perimetrales y DMZ:
+- La red perimetral con firewalls, routers con politicas muy estrictas
+- Servidores publicos en DMZ y se restringe el acceso a la red interna
+Evaluacion de necesidades de seguridad en redes:
+- Usar herramientas como Wireshark, NetFlow y otros
