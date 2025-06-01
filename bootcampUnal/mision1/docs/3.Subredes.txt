@@ -1,0 +1,26 @@
+Las redes no pueden tener el numero exacto de direcciones necesarias, se debe considerar el posible crecimiento
+de la red.
+
+IIIIIIII.IIIIIIII.IIIIIIII.00000000 > En el ultimo octeto para una clase C podria "bloquear" un byte y dejar el resto para habilitar las redes de la subnet
+posiciones >>
+8 . 7 . 6 . 5 . 4 . 3 . 2 . 1
+255 128 64  32  16  8   4   1
+
+
+
+Ejemplo: Necesito 50 hosts por subred
+00000000
+Si tuviera I0000000  Tendria 2 redes > 2**1 y 126 hosts > 2**7 - 2
+Si tuviera II000000  Tendria 4 redes > 2**2 y 62 hosts > 2**6 - 2
+
+Al dividir la red en subredes, la mascara de red cambia
+
+Si la red fuera > 255.255.255.0  /24
+si se tienen 2 bytes activos, la red seria 255.255.255.192  ( 2**7 + 2**6 ) asi quedaria 255.255.255.0 /26
+
+
+Ejemplo: 8 subreds
+
+III00000 Tendria 8 redes > 2**3 y 30 hosts > 2**5 - 2
+Mascara > 255.255.255.0 /27
+          255.255.255.224

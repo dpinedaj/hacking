@@ -1,0 +1,60 @@
+Ejercicio 1 – Nivel Básico
+Dada la red 192.168.1.0/24, divide la red en 4 subredes. Indica:
+- Para dividirla en 4 subredes seria R = 4 = 2**2
+La nueva máscara de subred
+- IIIIIIII.IIIIIIII.IIIIIIII.II000000   > 2**7 + 2**6 = 128 + 64 = 192
+- 255.255.255.0 /26 (24+2)
+- 255.255.255.192
+Las direcciones de red de cada subred, el rango de IPs válidas en cada subred y la dirección de broadcast
+- DR > 192.168.1.0   DI > 192.168.1.1  DF > 192.168.1.126  DB > 192.168.1.127
+- DR > 192.168.1.128   DI > 192.168.1.129  DF > 192.168.1.254  DB > 192.168.1.255
+
+Ejercicio 2
+La red 10.0.0.0/8 debe dividirse en 16 subredes. Calcula:
+Cuántos bits se necesitan para el subneteo
+- Importante resaltar que es una red clase A
+- Para dividirse en 16 subredes seria R = 16 = 2**4, se tendrian que ocupar 4 bits
+La nueva máscara de subred
+- La mascara de red inicial es 255.0.0.0 /8
+- Los bits usados serian 7, 6, 5, 4 = 2**7 + 2**6 + 2**5 + 2**4 = 128 + 64 + 32 + 16 = 240
+- La mascara de subred seria 255.240.0.0 /12
+La dirección de red y de broadcast de la primera subred
+- DR > 10.0.0.0/12   DB > 10.15.255.255/12
+
+Ejercicio 3
+Tienes la red 172.16.0.0/16. Crea 8 subredes. Para cada subred, indica:
+- Red clase B
+- Para 8 subreds seria R = 8 = 2**3, se ocuparian 3 bits
+Máscara de subred
+- Mascara de subred inicial es 255.255.0.0/16
+- Los bits usados seria 7, 6, 5 = 2**7 + 2**6 + 2**5 = 128 + 64 + 32 = 224
+- La mascara de subred seria 255.255.224.0/19
+Dirección de red
+- DR > 255.255.0.0/19
+Número de IPs útiles por subred
+- Al ser clase B los ip utiles son H = 2**16 - 2 = 65536 - 2 = 65534
+- Para cada subred, al bloquear 3 bits, los ip utiles serian H = 2**13 - 2 = 8192 - 2 = 8190
+
+Ejercicio 4
+Con la red 192.168.10.0/24, crea 2 subredes. Luego responde:
+- Red clase C
+- Para 2 subredes seria R = 2 = 2**1, se ocuparia 1 bit
+¿Cuál es la nueva máscara?
+- Mascara inicial 255.255.255.0/24
+- Los bits usados serian 7 = 2**7 = 128
+- Nueva mascara 255.255.255.128/25
+¿Cuál es la dirección de broadcast de la segunda subred?
+- La segunda subred iria hasta 255, asi   DB > 192.168.10.255
+¿Cuántas direcciones IP útiles hay por subred?
+- Seria H = 2**7 - 2 = 128 - 2 = 126
+
+Ejercicio 5
+La red 192.168.0.0/24 debe ser dividida en 8 subredes. Indica:
+- Red clase C
+- Para 8 subreds seria R = 8 = 2**3, se ocuparian 3 bits
+Cuántos bits se toman prestados
+- 3 bits
+Cuál es la nueva notación CIDR
+- 192.168.0.0/27
+La dirección de red y broadcast de la cuarta subred
+- DR > 192.168.0.96   DB > 192.168.0.127
