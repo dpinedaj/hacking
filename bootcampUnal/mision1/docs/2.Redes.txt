@@ -34,11 +34,17 @@ Modelo OSI, TCP/IP, UDP:
   - Tipos:
     - privada: Permite identificar el equipo dentro de una red privada, se asocia al nombre del equipo
     - publica: Asignada por el proveedor del servicio de internet, permite la salida de la información hacia la red de redes a nivel mundial.
+  - Puede ser asignacion manual, automatica o estatica
+  - Rango 0.0.0.0 hasta 255.255.255.255
+    . El 255 en numero binario es 11111111 (8 bytes, la red tiene 4 octetos, 32 bytes), el calculo es H = 2^n - 2 (n seria 8, 16, 24 para capacidad, cuando es 8, serian 254 redes disponibles, el 0 es el de ref y el 255 el de cierre) 
+    - clase A: 0.0.0.0 -> 126.255.255.255 El primer octeto representa la red, los siguientes el equipo, mascara: 255.0.0.0 "/8"
+    - clase B: 128.0.0.0 -> 191.255.255.255 Los dos primeros octetos representan la red, los siguientes el equipo, mascara: 255.255.0.0 "/16"
+    - clase C: 192.0.0.0 -> 223.255.255.255 Los tres primeros octetos representan la red, el siguiente el equipo, mascara: 255.255.255.0 "/24"
+    - clase D: Direccion multicast
+    - clase E: Direccion para pruebas cientificas especializadas
+    - Lookback 127.0.0.0 -> 127.255.255.255 (Se ha utilizado siempre para pruebas lookback)
   - IPv6
   - IPv4
-  - Puede ser asignacion manual, automatica o estatica
-
-
 - UDP: No le interesa el estado, le interesa la velocidad, entrega y no espera respuesta (Se usa en telefonia)
 
 Arquitectura:
