@@ -6,8 +6,10 @@ La nueva máscara de subred
 - 255.255.255.0 /26 (24+2)
 - 255.255.255.192
 Las direcciones de red de cada subred, el rango de IPs válidas en cada subred y la dirección de broadcast
-- DR > 192.168.1.0   DI > 192.168.1.1  DF > 192.168.1.126  DB > 192.168.1.127
-- DR > 192.168.1.128   DI > 192.168.1.129  DF > 192.168.1.254  DB > 192.168.1.255
+- DR > 192.168.1.0   DI > 192.168.1.1  DF > 192.168.1.62  DB > 192.168.1.63
+- DR > 192.168.1.64   DI > 192.168.1.66  DF > 192.168.1.126  DB > 192.168.1.127
+- DR > 192.168.1.128   DI > 192.168.1.129  DF > 192.168.1.190  DB > 192.168.1.191
+- DR > 192.168.1.192   DI > 192.168.1.193  DF > 192.168.1.254  DB > 192.168.1.255
 
 Ejercicio 2
 La red 10.0.0.0/8 debe dividirse en 16 subredes. Calcula:
